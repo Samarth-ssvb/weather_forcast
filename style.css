@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: black; */
+}
+.heading
+{
+display: flex;
+align-items: center!important;
+justify-content: space-around;
+margin-bottom: 5vh;
+}
+.container{
+    margin-top: 5%;
+}
+.input-group{
+        display: flex!important;
+        flex-direction: row;
+        justify-content: space-around;  
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+input{
+    color:black;
+    width: 50%;
+    height: 3rem;
+    border-radius: 1rem;
+    text-align:center;
+    font-weight: 700;
+    outline: none;
+    border-width: 0 0 1px 0;
+    border-style: none none solid none;
+    background:linear-gradient(190deg,rgb(60, 165, 218),blue) ;
+
+}
+input::placeholder {
+    color: rgb(0, 0, 0);
+}
+input:focus::placeholder {
+    color: rgb(255, 255, 255);
+}
+input:focus{
+    background: rgb(241, 241, 241);
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    height: 560px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.06);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 20;
+    bottom: 0;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    font-family: 'Poppins',sans-serif;
+    color: #fcfcfc;
+}
+.card-title{
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin: 25px 0 10px 0;
+}
+.card-description{
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.card-temperature{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+}
+.card-container{
+    width: 70%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+}
+.card-details{
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.card-details .card-span{
+    color: #b3b3b3;
+}
+.card-details:first-child{
+    border-right: 2px solid #fcfcfc;
+}
